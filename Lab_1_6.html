@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstrong</title>
+</head>
+<body>
+    <script>
+         n=parseInt(prompt("enter a number"))
+         var n=Number(n);
+         var sum=0;
+         var temp=n;
+         while(temp!=0)
+         {
+             var r=temp%10;
+             sum=sum+(r*r*r);
+             temp=parseInt(temp/10)
+         }
+
+         if(sum==n)
+         {
+             alert("armstrong");
+         }
+         else
+         {
+             alert("  not armstrong");
+         }
+
+    </script>
+</body>
+</html>
