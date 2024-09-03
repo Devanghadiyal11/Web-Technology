@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab_3_1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let n = [];
+		let mx=0
+		let len = parseInt(prompt("length : "))
+		for (var i = 0; i < len; i++) {
+		 	let num = parseInt(prompt("num : "))
+		 	n.push(num)
+		 } 
+		for(let i=0;i<n.length;i++){
+			if(mx<n[i]){
+				mx=n[i];
+			}
+
+
+			
+		}
+		document.write(mx);
+	</script>
+
+</body>
+</html>

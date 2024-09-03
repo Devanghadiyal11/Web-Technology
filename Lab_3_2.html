@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab_3_2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let n = [];
+		let mx=0
+		let len = parseInt(prompt("length : "))
+		for (var i = 0; i < len; i++) {
+		 	let num = parseInt(prompt("num : "))
+		 	n.push(num)
+		 } 
+		 
+
+		for(let i=0;i<n.length;i++){
+
+			for(let j=0;j<len-i-1;j++){
+				
+				    if (n[j] > n[j + 1]) {
+                    // swap temp and n[i] using bouble shote
+                    let temp = n[j];
+                    n[j] = n[j + 1];
+                    n[j + 1] = temp;
+                }
+
+			}
+			
+
+
+			
+		}
+		document.write(n);
+		
+	</script>
+
+</body>
+</html>

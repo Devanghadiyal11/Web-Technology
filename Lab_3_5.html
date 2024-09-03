@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let word = ['ajanta'];
+		let first=word.indexof('a');
+		let last=word.lastindexof('a');
+		if (first !== -1 && last !== -1 && first !== last){
+			let result =word.substring(first+1,last);
+			document.write(result);
+
+		}
+		else{
+			document.write('Given character has not found a');
+		}
+
+	</script>
+
+</body>
+</html>
