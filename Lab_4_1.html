@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab-4-1</title>
+</head>
+<body>
+<script type="text/javascript">
+		let Faculties =[
+  {
+    "createdAt": "2024-06-20T00:20:28.293Z",
+    "name": "Lucille Runolfsdottir",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/165.jpg",
+    "mobileno": "(244) 577-3719",
+    "id": "1"
+  },
+  {
+    "createdAt": "2024-06-19T09:46:36.436Z",
+    "name": "Don Waters",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1054.jpg",
+    "mobileno": "290-405-5808",
+    "id": "2"
+  },
+  {
+    "createdAt": "2024-06-20T00:26:03.702Z",
+    "name": "Devin Emmerich",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1128.jpg",
+    "mobileno": "(866) 355-9601",
+    "id": "3"
+  },
+  {
+    "createdAt": "2024-06-19T12:24:04.639Z",
+    "name": "Margaret Klein",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1234.jpg",
+    "mobileno": "213.433.3962 x5006",
+    "id": "4"
+  },
+  {
+    "createdAt": "2024-06-19T07:22:06.884Z",
+    "name": "Rosalie Murray",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/431.jpg",
+    "mobileno": "1-917-294-7538",
+    "id": "5"
+  },
+  {
+    "createdAt": "2024-06-19T22:42:08.882Z",
+    "name": "Kelly Murray",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/345.jpg",
+    "mobileno": "(423) 591-6992 x7665",
+    "id": "6"
+  },
+  {
+    "createdAt": "2024-06-19T15:44:56.225Z",
+    "name": "Pat Purdy",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/869.jpg",
+    "mobileno": "1-652-648-8827",
+    "id": "7"
+  },
+  {
+    "createdAt": "2024-06-19T05:43:32.425Z",
+    "name": "Kay Pollich",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/929.jpg",
+    "mobileno": "551-706-5191 x11887",
+    "id": "8"
+  },
+  {
+    "createdAt": "2024-06-19T11:32:51.157Z",
+    "name": "Elaine Marks",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/874.jpg",
+    "mobileno": "398.614.5051 x755",
+    "id": "9"
+  },
+  {
+    "createdAt": "2024-06-19T14:59:08.159Z",
+    "name": "Shane Schulist",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1114.jpg",
+    "mobileno": "716.600.7342 x1228",
+    "id": "10"
+  }
+]
+  document.write('<table border=3>');
+
+for (let i = 0; i < Faculties.length; i++) {
+    document.write('<tr>');
+			document.write('<td>'+Faculties[i].name+'</td>');
+		
+			document.write('<td>'+Faculties[i].mobileno+'</td>');
+            document.write('<td>'+Faculties[i].id+'</td>');
+	document.write('</tr>');
+    
+} document.write('</table>');
+
+</script>
+</body>
+</html>
