@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_5_4</title>
+</head>
+<body>
+    <form id="form" onsubmit="validForm()" style="text-align:left">
+        <div>
+			<label for="Username">Username : </label><input type="text" id="Username" placeholder="Enter Username" />
+		</div></br>
+		<div>
+			<label for="Password">Password : </label><input type="password" id="Password" placeholder="Enter Password" />
+		</div></br>
+		<div>
+			<label for="Repeat">Confirm Password : </label><input type="password" id="Repeat" placeholder="Confirm Password" />
+		</div></br>
+		<div>
+			<label for="Age">Age : </label><input type="number" id="Age" placeholder="Enter Age" />
+		</div></br>
+		<div>
+			<label for="Enroll">Enrollment No : </label><input type="number" id="Enroll" placeholder="Enter Enrollment No." />
+		</div></br>
+		<div>
+			<label for="Email">Email : </label><input type="email" id="Email" placeholder="Enter Email">
+		</div></br>
+		<div>
+			<input type="submit"  value="Submit" />
+            <input type="button" id="Reset" value="Reset" onclick="res()">
+		</div></br>
+    </form>
+    <script type="text/javascript">
+        function validForm(){
+            ErrorMessage.style.color = "red";
+        var user = document.getElementById("Username");
+        var pass = document.getElementById("Password");
+        var repeat = document.getElementById("Repeat");
+        var age = document.getElementById("Age");
+        var enroll = document.getElementById("Enroll");
+        var email = document.getElementById("Email");
+        var error = document.getElementById("ErrorMessage");
+        error.innerHTML = "";
+            if(user.value === ""){
+                error.innerHTML += "Please enter Username";
+               
+            }
+            else if(user.value.length < 8){
+                error.innerHTML += "Invalid Username";
+              
+            }
+            pass_pattern = /^(?=.*\d)(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,12}$/;
+            if(pass === ""){
+                error.innerHTML += "Please Enter Password";
+        
+            }
+            else if((pass.length<8 || pass.length>12) && !pass_pattern.test(pass)){
+                error.innerHTML += "Invalid Password";
+          
+            }
+            if(repeat === ""){
+                error.innerHTML += "Please Reenter Password";
+             
+            }
+            else if(pass != repeat){
+                error.innerHTML += "Invalid Repeat Password";
+           
+            }
+            if(age === ""){
+                error.innerHTML += "Please enter age";
+               
+            }
+            else if(age<18){
+                error.innerHTML += "Age is less than 18";
+               
+            }
+            if(enroll === ""){
+                error.innerHTML += "Please enter Enrollment Number";
+              
+            }
+            else if(enroll.length != 11){
+                error.innerHTML += "Invalid Enrollment Number";
+                
+            }
+            email_pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,6}$/;
+            if(email === ""){
+                error.innerHTML += "Please enter Email";
+             
+            }
+            else if(!email_pattern.test(email)){
+                error.innerHTML += "Invalid Email";
+              
+            }
+    
+          
+    }
+    </script>
+</body>
+</html>
